@@ -1,0 +1,31 @@
+### SignUp
+
+@baseUri = http://localhost:3000
+
+ 
+POST {{baseUri}}/sign-up
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+    "password": "123456",
+    "name": "test",
+    "phone": "1234567890",
+    "dob" : "1990-01-01"
+}
+
+### SignIn
+
+POST {{baseUri}}/sign-in
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "123456"
+}
+
+### Get Profile
+
+GET {{baseUri}}/get-user?email=test@gmail.com
+
+
